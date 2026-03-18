@@ -26,16 +26,16 @@ const LoginPage = () => {
   return (
     <div className="login-page">
       <section className="login-page__left">
-        <div className="login-page__logo">
-          <div className="login-page__logo-icon">LS</div>
-          <span>lendsqr</span>
+        <div className="login-page__brand">
+          <div className="login-page__brand-mark">LS</div>
+          <div className="login-page__brand-text">lendsqr</div>
         </div>
 
-        <div className="login-page__illustration">
-          <div className="login-page__illustration-card login-page__illustration-card--large" />
-          <div className="login-page__illustration-card login-page__illustration-card--small" />
-          <div className="login-page__illustration-circle login-page__illustration-circle--one" />
-          <div className="login-page__illustration-circle login-page__illustration-circle--two" />
+        <div className="login-page__art">
+          <div className="login-page__art-card login-page__art-card--large" />
+          <div className="login-page__art-card login-page__art-card--small" />
+          <div className="login-page__art-circle login-page__art-circle--one" />
+          <div className="login-page__art-circle login-page__art-circle--two" />
         </div>
       </section>
 

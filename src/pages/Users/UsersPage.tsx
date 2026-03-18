@@ -48,9 +48,7 @@ const UsersPage = () => {
     return users.filter((user) => {
       const organizationMatch =
         appliedFilters.organization === '' ||
-        user.organization
-          .toLowerCase()
-          .includes(appliedFilters.organization.toLowerCase());
+        user.organization.toLowerCase().includes(appliedFilters.organization.toLowerCase());
 
       const usernameMatch =
         appliedFilters.username === '' ||
@@ -84,12 +82,6 @@ const UsersPage = () => {
     const end = start + ITEMS_PER_PAGE;
     return filteredUsers.slice(start, end);
   }, [filteredUsers, page]);
-
-  useEffect(() => {
-    if (page > totalPages) {
-      setPage(1);
-    }
-  }, [page, totalPages]);
 
   const activeUsersCount = users.filter((user) => user.status === 'Active').length;
   const usersWithLoans = Math.round(users.length * 0.42);
@@ -163,7 +155,7 @@ const UsersPage = () => {
                         className="column-filter-trigger"
                         onClick={() => setShowFilter((prev) => !prev)}
                       >
-                        ORGANIZATION ⌄
+                        ORGANIZATION ▾
                       </button>
                     </th>
                     <th>USERNAME</th>

@@ -28,14 +28,6 @@ const DashboardPage = () => {
           <h2 className="stat-card__value">102,453</h2>
         </article>
       </section>
-
-      <section className="content-card">
-        <h3>Overview</h3>
-        <p>
-          This dashboard mirrors the Lendsqr admin layout structure with quick
-          access to users, account summaries, and details pages.
-        </p>
-      </section>
     </AppLayout>
   );
 };
